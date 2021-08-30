@@ -1,0 +1,223 @@
+@media only screen and (max-width: 136.6rem) {
+  :root {
+    --container-width: 56.4rem;
+  }
+  #header {
+    width: 121.8rem;
+  }
+  #main {
+    width: 132.6rem;
+  }
+  #footer {
+    width: 115.8rem;
+    margin: 10.4rem auto 6rem auto;
+  }
+
+  .select-input {
+    background-position: 52.2rem 1.4rem;
+  }
+
+  .dropdown {
+    background-position: 52.1rem 1.3rem;
+  }
+  .footer-info {
+    flex-direction: column;
+    justify-content: space-between;
+    position: relative;
+    margin-right: 20rem;
+  }
+
+  .footer-info::before,
+  .footer-info::after {
+    position: absolute;
+    content: '';
+    width: 0.2rem;
+    height: 20.3rem;
+    border-radius: 0.2rem;
+    background-color: var(--sec-dark);
+    opacity: 0.1;
+    display: inline-block;
+    margin-bottom: -5rem;
+  }
+  .conditions-link::after,
+  .politics-link::after {
+    display: none;
+  }
+
+  .footer-info::after {
+    top: -8rem;
+    left: 37rem;
+  }
+  .footer-info::before {
+    top: -8rem;
+    left: -1rem;
+  }
+}
+
+@media only screen and (max-width: 102.4rem) {
+  :root {
+    --container-width: 44.4rem;
+  }
+  #header {
+    width: 97.8rem;
+  }
+  #main {
+    width: 102.4rem;
+  }
+  #footer {
+    width: 91.8rem;
+    margin-top: 6.4rem;
+    margin-bottom: 6.4rem;
+  }
+  .select-input {
+    background-position: 40.2rem 1.4rem;
+  }
+
+  .dropdown {
+    background-position: 40.1rem 1.3rem;
+  }
+  .section-heading h1 {
+    font-size: 3.4rem;
+  }
+  .footer-info::before,
+  .footer-info::after {
+    height: 14.3rem;
+    top: -4rem;
+  }
+  .footer-info::before {
+    left: 19rem;
+  }
+  .footer-info::after {
+    left: 42rem;
+  }
+  .footer-info {
+    margin-right: 6rem;
+  }
+}
+@media only screen and (max-width: 76.8rem) {
+  :root {
+    --container-width: 43.4rem;
+  }
+  #header {
+    width: 72.6rem;
+  }
+  #main {
+    width: 76.8rem;
+  }
+  #footer {
+    width: 66.6rem;
+    justify-content: flex-start;
+    margin-top: 3.4rem;
+    margin-bottom: 0;
+  }
+  .nav-ul {
+    display: none;
+  }
+  .burger {
+    display: inline-block;
+  }
+  #nav-bar {
+    justify-content: flex-end;
+  }
+  .popup-content {
+    width: 66.6rem;
+    height: 33.9rem;
+  }
+  .popup-wrapper {
+    margin: 33.3rem auto 0 auto;
+  }
+  .select-input {
+    background-position: 39.2rem 1.4rem;
+  }
+
+  .dropdown {
+    background-position: 39.1rem 1.3rem;
+  }
+  .footer-info::before,
+  .footer-info::after {
+    display: none;
+  }
+  .footer-info {
+    flex-direction: row;
+    margin-right: 0;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-areas: 'top . . ' 'inf inf cop';
+  }
+  .conditions-link::after,
+  .politics-link::after {
+    display: inline-block;
+  }
+  .conditions-link {
+    display: flex;
+    width: 22rem;
+  }
+  .politics-link {
+    display: flex;
+  }
+}
+
+@media only screen and (max-width: 32rem) {
+  :root {
+    --container-width: 29rem;
+  }
+  #header,
+  #main,
+  #footer {
+    width: 32rem;
+    border-radius: 0;
+  }
+  #main {
+    padding-bottom: 5.5rem;
+  }
+  .section-heading h1 {
+    width: var(--container-width);
+  }
+  #conditions-check ~ label,
+  #politics-check ~ label {
+    width: 26rem;
+  }
+  .popup-content {
+    width: 29rem;
+    height: 32.3rem;
+  }
+  .popup-wrapper {
+    margin: 11.3rem auto 0 auto;
+  }
+  .popup-content h2 {
+    font-size: 2.1rem;
+  }
+  .select-input {
+    background-position: 24.8rem 1.4rem;
+  }
+
+  .dropdown {
+    background-position: 24.7rem 1.3rem;
+  }
+  .login-bottom {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: 'top  .' 'inf  inf' 'inf inf' 'cop .';
+    margin-bottom: 2.1rem;
+  }
+  .footer-info {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .conditions-link::after,
+  .politics-link::after {
+    display: none;
+  }
+  .politics-link {
+    margin: 2.1rem 0 2.1rem 0;
+  }
+  .mail-link {
+    display: flex;
+  }
+}

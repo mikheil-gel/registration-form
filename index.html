@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>რეგისტრაცია</title>
+    <link rel="shortcut icon" href="./img/logo.svg" type="image/x-icon" />
+    <link rel="stylesheet" href="./css/fonts.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/media.css" />
+  </head>
+  <body>
+    <header id="header">
+      <div class="header-top flex-bt">
+        <div class="header-logo">
+          <a href="#">
+            <img src="./img/logo.svg" alt="logo" />
+          </a>
+        </div>
+        <nav id="nav-bar" class="flex-bt">
+          <div class="burger">
+            <div class="burger-icon">
+              <img src="./img/burger.svg" alt="burger menu" />
+            </div>
+            <div class="nav-popup hide">
+              <div class="nav-popup-close"><span> &#10006; </span></div>
+              <ul>
+                <li><a href="#">ჩვენზე</a></li>
+                <li><a href="#">თემები</a></li>
+                <li><a href="#">რესურსები</a></li>
+              </ul>
+            </div>
+          </div>
+          <ul class="nav-ul flex-bt">
+            <li class="nav-li"><a href="#">ჩვენზე</a></li>
+            <li class="nav-li"><a href="#">თემები</a></li>
+            <li class="nav-li"><a href="#">რესურსები</a></li>
+          </ul>
+          <div class="nav-block flex-act">
+          
+            <a class="nav-login" href="#">
+              <img src="./img/person.svg" alt="person login" />
+              <span>შესვლა</span>
+            </a>
+      
+            <div class="nav-search">
+              <a href="#">
+                <img src="./img/search.svg" alt="search" />
+              </a>
+            </div>
+          </div>
+        </nav>
+      </div>
+      <div class="header-path">
+        <a href="#">მთავარი</a>
+        <span><img src="./img/arrowRight.svg" alt="right arrow" /></span>
+        <a href="#">რეგისტრაცია</a>
+      </div>
+    </header>
+    <main id="main" class="flex-jct">
+      <section class="form-section">
+        <div class="section-heading">
+          <h1>რეგისტრაცია</h1>
+          <h3>ავტორიზაცია შესაძლებელია მხოლოდ განმანათლებლებისთვის</h3>
+        </div>
+        <div class="reg-form flex-act flex-col">
+          <form id="main-form">
+            <div id="region-group" class="form-group">
+              <label for="region">რეგიონი <span class="star">*</span></label>
+              <div class="select-group">
+                
+                <input type="text" class="select-input" id="region" placeholder="აირჩიეთ რეგიონი" readonly />
+             
+                <div class="dropdown drop-reg hide">
+                  <p>აირჩიეთ რეგიონი</p>
+                  <ul>
+                    <li class="dropdown-li" data-type="region">თბილისი</li>
+                    <li class="dropdown-li" data-type="region">აფხაზეთი</li>
+                    <li class="dropdown-li" data-type="region">აჭარა</li>
+                    <li class="dropdown-li" data-type="region">გურია</li>
+                    <li class="dropdown-li" data-type="region">იმერეთი</li>
+                    <li class="dropdown-li" data-type="region">კახეთი</li>
+                    <li class="dropdown-li" data-type="region">მცხეთა-მთიანეთი</li>
+                    <li class="dropdown-li" data-type="region">რაჭა-ლეჩხუმი და ქვემო სვანეთი</li>
+                    <li class="dropdown-li" data-type="region">სამეგრელო-ზემო სვანეთი</li>
+                    <li class="dropdown-li" data-type="region">სამცხე-ჯავახეთი</li>
+                    <li class="dropdown-li" data-type="region">ქვემო ქართლი</li>
+                    <li class="dropdown-li" data-type="region">შიდა ქართლი</li>
+                  </ul>
+                </div>
+
+                <!-- <span class="drop flex-all"><img src="./img/arrowDown.svg" alt="select option" /></span> -->
+              </div>
+              <p class="error hide">აირჩიეთ რეგიონი</p>
+            </div>
+            <div id="position-group" class="form-group">
+              <label for="position">პოზიცია <span class="star">*</span></label>
+              <div class="select-group">
+              
+                <input type="text" class="select-input" id="position" placeholder="აირჩიეთ პოზიცია" readonly />
+            
+                <div class="dropdown drop-pos hide">
+                  <p>აირჩიეთ პოზიცია</p>
+                  <ul>
+                    <li class="dropdown-li" data-type="position">მასწავლებელი</li>
+                    <li class="dropdown-li" data-type="position">სამართალდამცავი</li>
+                    <li class="dropdown-li" data-type="position" data-option="other">სხვა</li>
+                  </ul>
+                </div>
+                <!-- <span class="drop flex-all"><img src="./img/arrowDown.svg" alt="select option" /></span> -->
+              </div>
+              <p class="error hide">აირჩიეთ პოზიცია</p>
+            </div>
+            <div id="position-other-group" class="form-group display-none">
+              <label for="postition-other">სხვა პოზიცია <span class="star">*</span></label>
+              <div class="inp">
+                <input type="text" id="postition-other" />
+              </div>
+              <p class="error hide">შეიყვანეთ პოზიციის დასახელება</p>
+            </div>
+            <div id="job-group" class="form-group">
+              <label for="job">სამუშაო ადგილი</label>
+              <div class="inp">
+                <input type="text" id="job" />
+              </div>
+              <p class="error hide"></p>
+            </div>
+            <div id="email-group" class="form-group">
+              <label for="email">ელ. ფოსტა <span class="star">*</span></label>
+              <div class="inp">
+                <input type="text" id="email" />
+              </div>
+              <p class="error hide">შეიყვანეთ ელ. ფოსტა</p>
+            </div>
+            <div id="name-group" class="form-group">
+              <label for="name">სახელი <span class="star">*</span></label>
+              <div class="inp">
+                <input type="text" id="name" />
+              </div>
+              <p class="error hide">შეიყვანეთ სახელი</p>
+            </div>
+            <div id="surname-group" class="form-group">
+              <label for="surname">გვარი <span class="star">*</span></label>
+              <div class="inp">
+                <input type="text" id="surname" />
+              </div>
+              <p class="error hide">შეიყვანეთ გვარი</p>
+            </div>
+            <div id="password-group" class="form-group">
+              <label for="password">პაროლი <span class="star">*</span></label>
+              <div class="select flex">
+                <input type="password" class="password-input" id="password" />
+                <span id="pass-toggle" class="pass-toggle pass-none flex-all">
+                  <img class="pass-show" src="./img/show.svg" alt="show password" />
+                  <img class="pass-hide" src="./img/hide.svg" alt="hide password"
+                /></span>
+              </div>
+              <p class="error hide">შეიყვანეთ პაროლი</p>
+            </div>
+            <div id="password-rep-group" class="form-group">
+              <label for="password-rep">გაიმეორეთ პაროლი <span class="star">*</span></label>
+              <div class="select flex">
+                <input type="password" class="password-input" id="password-rep" disabled />
+                <span id="pass-rep-toggle" class="pass-toggle pass-none flex-all">
+                  <img class="pass-show" src="./img/show.svg" alt="show password" />
+                  <img class="pass-hide" src="./img/hide.svg" alt="hide password"
+                /></span>
+              </div>
+              <p class="error hide">გაიმეორეთ პაროლი</p>
+            </div>
+            <div id="conditions-check-group" class="form-group flex">
+              <input type="checkbox" id="conditions-check" />
+              <span class="checkmark flex-all"><img src="./img/check.svg" alt="check" /></span>
+              <label for="conditions-check"
+                >ვეთანხმები პლატფორმის <a class="form-link" href="#">მოხმარების პირობებს</a></label
+              >
+            </div>
+            <div id="politics-check-group" class="form-group flex">
+              <input type="checkbox" id="politics-check" />
+              <span class="checkmark flex-all"><img src="./img/check.svg" alt="check" /></span>
+              <label for="politics-check"
+                >გავეცანი <a class="form-link" href="#">კონფიდენციაულურობის პოლიტიკას</a></label
+              >
+            </div>
+            <div class="form-group">
+              <input type="submit" value="რეგისტრაცია" />
+              <p class="form-reminder display-none">გთხოვთ შეავსოთ ყველა ველი</p>
+            </div>
+          </form>
+          <div class="login-section flex-act flex-col">
+            <div class="login-head flex-all">
+              <div class="dashes"></div>
+              <h2>ან</h2>
+              <div class="dashes"></div>
+            </div>
+            <div class="button-group">
+              <button class="reg-facebook flex-all">
+                <span>
+                  <img src="./img/facebookWhite.svg" alt="facebook" />
+                </span>
+                რეგისტრაცია Facebook-ით
+              </button>
+            </div>
+            <div class="button-group">
+              <button class="reg-gmail flex-all">
+                <span>
+                  <img src="./img/gmail.svg" alt="gmail" />
+                </span>
+                რეგისტრაცია Gmail-ით
+              </button>
+            </div>
+            <div class="login-bottom">
+       
+              უკვე რეგისტრირებული ხართ?
+              <a href="#"><span> მიყევით ამ ბმულს</span> <img src="./img/arrowUp.svg" alt="link" /></a>
+         
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer id="footer" class="flex-end">
+      <div class="footer-grid">
+        <div class="footer-links flex-end">
+          <div class="mail-link">info@school.ge</div>
+          <a class="face-link" href="#"><img src="./img/facebookDark.svg" alt="facebook" /></a>
+          <a class="tube-link" href="#"><img src="./img/youtube.svg" alt="youtube" /></a>
+        </div>
+        <div class="footer-info">
+          <div class="conditions-link"><a href="#">მოხმარების პირობები</a></div>
+          <div class="politics-link"><a href="#">კონფიდენციალურობა</a></div>
+        </div>
+        <div class="footer-rights">&copy; 2021 ყველა უფლება დაცულია</div>
+      </div>
+    </footer>
+    <div id="popup" class="popup-container display-none">
+      <div id="popup-wrapper" class="popup-wrapper flex-all flex-col">
+        <div id="popup-close" class="popup-close flex-all">
+          <img src="./img/close.svg" alt="close popup" />
+        </div>
+        <div class="popup-content flex-act flex-col">
+          <h2>რეგისტრაცია</h2>
+          <div class="popup-info">
+            <div class="popup-details flex">
+              <p>სახელი:</p>
+              <span class="popup-name"></span>
+            </div>
+            <div class="popup-details flex">
+              <p>გვარი:</p>
+              <span class="popup-surname"></span>
+            </div>
+            <div class="popup-details flex">
+              <p>რეგიონი:</p>
+              <span class="popup-region"></span>
+            </div>
+            <div class="popup-details flex">
+              <p>პოზიცია:</p>
+              <span class="popup-position"></span>
+            </div>
+            <div class="popup-details flex">
+              <p>ელ.ფოსტა:</p>
+              <span class="popup-email"></span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
